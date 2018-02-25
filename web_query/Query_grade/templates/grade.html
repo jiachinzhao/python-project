@@ -1,0 +1,41 @@
+{% extends "bootstrap/base.html" %}
+
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>grade</title>
+</head>
+<body>
+    <table id = "table1" border = "1" align = "center">
+    <tr>
+        <td>序号</td>
+        <td>学号</td>
+        <td>姓名</td>
+        <td>开课学期</td>
+        <td>课程名称</td>
+        <td>总成绩</td>
+        <td>成绩标志</td>
+        <td>课程性质</td>
+        <td>课程类别</td>
+        <td>学时</td>
+        <td>学分</td>
+        <td>考试性质</td>
+        <td>补重学期</td>
+    </tr>
+    </table>
+    <div style = "overflow-x:auto;overflow-y:auto;height:700px;">
+        <table id = "table2" border = "1" align = "center">
+
+            {% for item in js %}
+            <tr>
+                {% for x in js[item] %}
+                    <td> {{ js[item][x]|safe}}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>
+{% endblock %}
