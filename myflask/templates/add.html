@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Familiar 
+Description: A two-column, fixed-width design for 1024x768 screen resolutions.
+Version    : 1.0
+Released   : 20091206
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>ACM_XTZ</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="../static/css/style.css" rel="stylesheet" type="text/css" media="screen" />
+<link rel="stylesheet" href="../static/css/demo.css" type="text/css" media="all" />
+</head>
+<body>
+	<div id="logo">
+		<h1><a href="#">acm_xtz </a></h1>
+	</div>
+	<hr />
+	<!-- end #logo -->
+	<div id="header">
+		<div id="menu">
+			<ul>
+				<li><a href="{{ url_for("index")}}" class="first">Home</a></li>
+				<li class="current_page_item"><a href="#">Add</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+		<!-- end #menu -->
+		<div id="search">
+			<form method="get" action="">
+				<fieldset>
+				<input type="text" name="s" id="search-text" size="15" />
+				<input type="submit" id="search-submit" value="GO" />
+				</fieldset>
+			</form>
+		</div>
+		<!-- end #search -->
+	</div>
+	<!-- end #header -->
+	<!-- end #header-wrapper -->
+	<div id="page">
+		<div id="content">
+		  <div class="post">
+				<h2 class="title">Add Dairly Record</h2>
+				<div class="entry">
+					<form name="myAddForm" class="form" action="{{ url_for("login") }}" method="post" >
+						<p class="sendUserName">
+							<input type="text" name="sendUserName" id="sendUserName" value=""/><label for ="sendUserName">sendUsername</label>
+						</p>
+						<p class="password">
+							<input type="password" name="password" id="password" value=""/> <label for="password">password</label>
+						</p>
+
+						<p class="title">
+							<input type="text" name="title" id="title" value=""/> <label for="title">title</label>
+						</p>
+						<p class="content">
+							<textarea name="content"></textarea>
+						</p>
+						<p class="submit">
+							<input type="submit" value="Send"  />
+						</p>
+					</form>
+				</div>
+		  </div>
+		</div><!-- end #content -->
+
+		<div id="sidebar">
+			<ul>
+				<li>
+					<h2>Web Description</h2>
+					<p>acm_xtz's log</p>
+				</li>
+				<li>
+					<h2>Link</h2>
+					<ul>
+						<li><a href="http://acm.hnust.edu.cn">hnust</a></li>
+						<li><a href="http://acm.hdu.edu.cn">hdu</a></li>
+						<li><a href="http://poj.org">pku</a></li>
+						<li><a href="http://vjudge.net">vjudge</a></li>
+						<li><a href="http://acm.zju.edu.cn">zoj</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!-- end #sidebar -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	<!-- end #page -->
+	<div id="footer">
+		<p>Copyright (c) 2008 Sitename.com. All rights reserved. Design by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.</p>
+	</div>
+	<!-- end #footer -->
+</body>
+</html>
+<span style="display:none;"><a href="http://www.mobanwang.com" title="��ҳģ������">��ҳģ��</a></span><span style="display:none;"><a href="http://www.mobanwang.com" title="��ҳģ������">��ҳģ��</a></span>
