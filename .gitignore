@@ -1,0 +1,5 @@
+
+# Files to ignore
+
+/lazy_study/build/*
+/lazy_study/dist/*

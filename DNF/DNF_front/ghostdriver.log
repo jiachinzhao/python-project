@@ -1,0 +1,17 @@
+[INFO  - 2017-02-28T12:07:41.351Z] GhostDriver - Main - running on port 20021
+[INFO  - 2017-02-28T12:07:44.576Z] Session [83057a90-fdae-11e6-8b0a-475e467ea0a1] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-02-28T12:07:44.577Z] Session [83057a90-fdae-11e6-8b0a-475e467ea0a1] - page.customHeaders:  - {}
+[INFO  - 2017-02-28T12:07:44.577Z] Session [83057a90-fdae-11e6-8b0a-475e467ea0a1] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-02-28T12:07:44.577Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 83057a90-fdae-11e6-8b0a-475e467ea0a1
+[ERROR - 2017-02-28T12:07:55.723Z] Session [83057a90-fdae-11e6-8b0a-475e467ea0a1] - page.onError - msg: ReferenceError: Can't find variable: pgvSendClick
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-02-28T12:07:55.724Z] Session [83057a90-fdae-11e6-8b0a-475e467ea0a1] - page.onError - stack:
+  _pgvSendPageEditor (http://dnf.qq.com/web2015/js/dnf.js:1095)
+  (anonymous function) (http://dnf.qq.com/web2015/js/dnf_page_edit.js:132)
+  o (http://ossweb-img.qq.com/images/js/jquery/jquery-1.7.2.min.js:2)
+  fireWith (http://ossweb-img.qq.com/images/js/jquery/jquery-1.7.2.min.js:2)
+  w (http://ossweb-img.qq.com/images/js/jquery/jquery-1.7.2.min.js:4)
+  onreadystatechange (http://ossweb-img.qq.com/images/js/jquery/jquery-1.7.2.min.js:4)
+
+  phantomjs://platform/console++.js:263 in error

@@ -1,0 +1,218 @@
+{
+  "error_code": "0",
+  "type": "1",
+  "weather": [
+    {
+      "date": "今天",
+      "low_temperature": "10",
+      "high_temperature": "20",
+      "sky_info": "多云",
+      "wind_dir": "南风",
+      "wind_level": "三级"
+    },
+    {
+      "date": "明天",
+      "low_temperature": "10",
+      "high_temperature": "20",
+      "sky_info": "多云",
+      "wind_dir": "南风",
+      "wind_level": "三级"
+    },
+    {
+      "date": "后天",
+      "low_temperature": "10",
+      "high_temperature": "20",
+      "sky_info": "多云",
+      "wind_dir": "南风",
+      "wind_level": "三级"
+    }
+  ],
+  "current_city": "湘潭",
+  "query_city": "宁波",
+  "error": 0,
+  "status": "success",
+  "date": "2017-04-19",
+  "results": [
+    {
+      "currentCity": "湘潭市",
+      "pm25": "68",
+      "index": [
+        {
+          "title": "穿衣",
+          "zs": "舒适",
+          "tipt": "穿衣指数",
+          "des": "建议着长袖T恤、衬衫加单裤等服装。年老体弱者宜着针织长袖衬衫、马甲和长裤。"
+        },
+        {
+          "title": "洗车",
+          "zs": "不宜",
+          "tipt": "洗车指数",
+          "des": "不宜洗车，未来24小时内有雨，如果在此期间洗车，雨水和路上的泥水可能会再次弄脏您的爱车。"
+        },
+        {
+          "title": "感冒",
+          "zs": "较易发",
+          "tipt": "感冒指数",
+          "des": "天气转凉，空气湿度较大，较易发生感冒，体质较弱的朋友请注意适当防护。"
+        },
+        {
+          "title": "运动",
+          "zs": "较不宜",
+          "tipt": "运动指数",
+          "des": "有较强降水，建议您选择在室内进行健身休闲运动。"
+        },
+        {
+          "title": "紫外线强度",
+          "zs": "最弱",
+          "tipt": "紫外线强度指数",
+          "des": "属弱紫外线辐射天气，无需特别防护。若长期在户外，建议涂擦SPF在8-12之间的防晒护肤品。"
+        }
+      ],
+      "weather_data": [
+        {
+          "date": "周三 04月19日 (实时：29℃)",
+          "dayPictureUrl": "http://api.map.baidu.com/images/weather/day/zhongyu.png",
+          "nightPictureUrl": "http://api.map.baidu.com/images/weather/night/zhongyu.png",
+          "weather": "中雨",
+          "wind": "南风微风",
+          "temperature": "29 ~ 19℃"
+        },
+        {
+          "date": "周四",
+          "dayPictureUrl": "http://api.map.baidu.com/images/weather/day/duoyun.png",
+          "nightPictureUrl": "http://api.map.baidu.com/images/weather/night/xiaoyu.png",
+          "weather": "多云转小雨",
+          "wind": "北风微风",
+          "temperature": "24 ~ 14℃"
+        },
+        {
+          "date": "周五",
+          "dayPictureUrl": "http://api.map.baidu.com/images/weather/day/zhongyu.png",
+          "nightPictureUrl": "http://api.map.baidu.com/images/weather/night/duoyun.png",
+          "weather": "小到中雨转多云",
+          "wind": "北风微风",
+          "temperature": "18 ~ 14℃"
+        },
+        {
+          "date": "周六",
+          "dayPictureUrl": "http://api.map.baidu.com/images/weather/day/qing.png",
+          "nightPictureUrl": "http://api.map.baidu.com/images/weather/night/qing.png",
+          "weather": "晴",
+          "wind": "南风微风",
+          "temperature": "24 ~ 14℃"
+        }
+      ]
+    }
+  ]
+  "message": "ok",
+  "nu": "776012535637",
+  "ischeck": "0",
+  "condition": "00",
+  "com": "tiantian",
+  "status": "200",
+  "state": "0",
+  "data": [
+    {
+      "time": "2017-04-08 10:59:11",
+      "ftime": "2017-04-08 10:59:11",
+      "context": "已转同行,承运商【货代】,转单号【15675912056】",
+      "location": ""
+    },
+    {
+      "time": "2017-04-08 10:49:13",
+      "ftime": "2017-04-08 10:49:13",
+      "context": "邵东(0739-2988266)的贺春辉15869881277正在派件",
+      "location": ""
+    },
+    {
+      "time": "2017-04-08 09:24:23",
+      "ftime": "2017-04-08 09:24:23",
+      "context": "快件到达邵东(0739-2988266)，上一站是衡阳分拨中心，扫描员是贺春辉15869881277",
+      "location": ""
+    },
+    {
+      "time": "2017-04-08 06:44:55",
+      "ftime": "2017-04-08 06:44:55",
+      "context": "快件由衡阳分拨中心发往邵东(0739-2988266)",
+      "location": ""
+    },
+    {
+      "time": "2017-04-08 06:43:03",
+      "ftime": "2017-04-08 06:43:03",
+      "context": "快件到达衡阳分拨中心，上一站是长沙分拨中心，扫描员是龙书长",
+      "location": ""
+    },
+    {
+      "time": "2017-04-08 06:20:29",
+      "ftime": "2017-04-08 06:20:29",
+      "context": "快件到达衡阳分拨中心，上一站是长沙分拨中心，扫描员是张敏伟",
+      "location": ""
+    },
+    {
+      "time": "2017-04-08 00:29:22",
+      "ftime": "2017-04-08 00:29:22",
+      "context": "快件由长沙分拨中心发往衡阳分拨中心",
+      "location": ""
+    },
+    {
+      "time": "2017-04-08 00:21:49",
+      "ftime": "2017-04-08 00:21:49",
+      "context": "快件到达长沙分拨中心，上一站是杭州集散，扫描员是卸货口3",
+      "location": ""
+    },
+    {
+      "time": "2017-04-07 23:16:30",
+      "ftime": "2017-04-07 23:16:30",
+      "context": "快件到达长沙分拨中心，上一站是杭州集散，扫描员是到车扫描",
+      "location": ""
+    },
+    {
+      "time": "2017-04-07 02:18:32",
+      "ftime": "2017-04-07 02:18:32",
+      "context": "快件由杭州集散陆运发往长沙分拨中心",
+      "location": ""
+    },
+    {
+      "time": "2017-04-07 02:17:29",
+      "ftime": "2017-04-07 02:17:29",
+      "context": "快件到达杭州集散陆运，上一站是宁波分拨中心，扫描员是进口组7",
+      "location": ""
+    },
+    {
+      "time": "2017-04-06 22:08:47",
+      "ftime": "2017-04-06 22:08:47",
+      "context": "快件由宁波分拨中心发往杭州集散陆运",
+      "location": ""
+    },
+    {
+      "time": "2017-04-06 22:05:43",
+      "ftime": "2017-04-06 22:05:43",
+      "context": "快件到达宁波分拨中心，上一站是宁波北仑(0574-86837699,0574-86837655)，扫描员是黄秀彦",
+      "location": ""
+    },
+    {
+      "time": "2017-04-06 20:02:38",
+      "ftime": "2017-04-06 20:02:38",
+      "context": "快件由宁波北仑(0574-86837699,0574-86837655)发往宁波分拨中心",
+      "location": ""
+    },
+    {
+      "time": "2017-04-06 19:45:55",
+      "ftime": "2017-04-06 19:45:55",
+      "context": "快件由宁波北仑(0574-86837699,0574-86837655)发往长沙陆运",
+      "location": ""
+    },
+    {
+      "time": "2017-04-06 19:45:53",
+      "ftime": "2017-04-06 19:45:53",
+      "context": "宁波北仑(0574-86837699,0574-86837655)已进行装袋扫描",
+      "location": ""
+    },
+    {
+      "time": "2017-04-06 19:01:48",
+      "ftime": "2017-04-06 19:01:48",
+      "context": "快件到达宁波北仑(0574-86837699,0574-86837655)，上一站是北仑城区，扫描员是唐18968269839",
+      "location": ""
+    }
+  ]
+}

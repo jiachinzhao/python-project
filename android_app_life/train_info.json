@@ -1,0 +1,46 @@
+{
+  "error": "0",
+  "trainList": [
+    {
+      "startTime": " ",
+      "endTime": " ",
+      "from": " ",
+      "to": " ",
+      "trainNo": " ",
+      "duration": " ",
+      "seatInfos": [
+        {
+          "seat": " ",
+          "seatPrice": " ",
+          "remainNum": " "
+        },
+        {
+          "seat": " ",
+          "seatPrice": " ",
+          "remainNum": " "
+        }
+      ]
+    },
+    {
+      "startTime": " ",
+      "endTime": " ",
+      "from": " ",
+      "to": " ",
+      "trainNo": " ",
+      "duration": " ",
+      "seatInfos": [
+        {
+          "seat": " ",
+          "seatPrice": " ",
+          "remainNum": " "
+        },
+        {
+          "seat": " ",
+          "seatPrice": " ",
+          "remainNum": " "
+        }
+      ]
+    }
+  ]
+}
+

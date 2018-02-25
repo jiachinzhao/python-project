@@ -1,0 +1,148 @@
+[INFO  - 2017-04-07T02:09:04.586Z] GhostDriver - Main - running on port 7542
+[INFO  - 2017-04-07T02:09:07.606Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2017-04-07T02:09:07.606Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - page.customHeaders:  - {}
+[INFO  - 2017-04-07T02:09:07.607Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2017-04-07T02:09:07.607Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 2e88d4c0-1b37-11e7-b002-5f301f09689c
+[ERROR - 2017-04-07T02:09:08.155Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - page.onError - msg: ReferenceError: Can't find variable: space_replace
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-04-07T02:09:08.155Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - page.onError - stack:
+  doLogin (http://hnust.hunbys.com/apps/home/View/default/Public/js/user.js:8)
+  onsubmit (http://hnust.hunbys.com/index.php/home/Public/mlogin.html:11)
+  dispatchEvent (:0)
+  U (:119)
+  $ (:108)
+  $ (:101)
+  gh (:141)
+  sh (:152)
+  (anonymous function) (:152)
+  (anonymous function) (:152)
+  (anonymous function) (:153)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-04-07T02:09:11.364Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - page.onError - msg: VIDEOJS: ERROR: (CODE:4 MEDIA_ERR_SRC_NOT_SUPPORTED) No compatible source was found for this media. [object Object]
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-04-07T02:09:11.364Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - page.onError - stack:
+  apply (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-04-07T02:09:18.143Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - page.onError - msg: VIDEOJS: ERROR: (CODE:4 MEDIA_ERR_SRC_NOT_SUPPORTED) No compatible source was found for this media. [object Object]
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-04-07T02:09:18.144Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - page.onError - stack:
+  apply (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-04-07T02:09:21.222Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - page.onError - msg: VIDEOJS: ERROR: (CODE:4 MEDIA_ERR_SRC_NOT_SUPPORTED) No compatible source was found for this media. [object Object]
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-04-07T02:09:21.222Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - page.onError - stack:
+  apply (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-04-07T02:09:24.335Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - page.onError - msg: VIDEOJS: ERROR: (CODE:4 MEDIA_ERR_SRC_NOT_SUPPORTED) No compatible source was found for this media. [object Object]
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-04-07T02:09:24.336Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - page.onError - stack:
+  apply (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-04-07T02:09:27.423Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - page.onError - msg: VIDEOJS: ERROR: (CODE:4 MEDIA_ERR_SRC_NOT_SUPPORTED) No compatible source was found for this media. [object Object]
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-04-07T02:09:27.423Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - page.onError - stack:
+  apply (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-04-07T02:09:31.430Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - page.onError - msg: VIDEOJS: ERROR: (CODE:4 MEDIA_ERR_SRC_NOT_SUPPORTED) No compatible source was found for this media. [object Object]
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-04-07T02:09:31.430Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - page.onError - stack:
+  apply (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-04-07T02:09:38.025Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - page.onError - msg: VIDEOJS: ERROR: (CODE:4 MEDIA_ERR_SRC_NOT_SUPPORTED) No compatible source was found for this media. [object Object]
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-04-07T02:09:38.025Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - page.onError - stack:
+  apply (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-04-07T02:09:41.111Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - page.onError - msg: VIDEOJS: ERROR: (CODE:4 MEDIA_ERR_SRC_NOT_SUPPORTED) No compatible source was found for this media. [object Object]
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-04-07T02:09:41.111Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - page.onError - stack:
+  apply (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-04-07T02:09:44.204Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - page.onError - msg: VIDEOJS: ERROR: (CODE:4 MEDIA_ERR_SRC_NOT_SUPPORTED) No compatible source was found for this media. [object Object]
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-04-07T02:09:44.204Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - page.onError - stack:
+  apply (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-04-07T02:09:47.314Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - page.onError - msg: VIDEOJS: ERROR: (CODE:4 MEDIA_ERR_SRC_NOT_SUPPORTED) No compatible source was found for this media. [object Object]
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-04-07T02:09:47.314Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - page.onError - stack:
+  apply (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-04-07T02:09:50.896Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - page.onError - msg: VIDEOJS: ERROR: (CODE:4 MEDIA_ERR_SRC_NOT_SUPPORTED) No compatible source was found for this media. [object Object]
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-04-07T02:09:50.896Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - page.onError - stack:
+  apply (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-04-07T02:09:54.066Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - page.onError - msg: VIDEOJS: ERROR: (CODE:4 MEDIA_ERR_SRC_NOT_SUPPORTED) No compatible source was found for this media. [object Object]
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-04-07T02:09:54.066Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - page.onError - stack:
+  apply (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-04-07T02:10:00.642Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - page.onError - msg: VIDEOJS: ERROR: (CODE:4 MEDIA_ERR_SRC_NOT_SUPPORTED) No compatible source was found for this media. [object Object]
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-04-07T02:10:00.643Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - page.onError - stack:
+  apply (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-04-07T02:10:07.370Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - page.onError - msg: VIDEOJS: ERROR: (CODE:4 MEDIA_ERR_SRC_NOT_SUPPORTED) No compatible source was found for this media. [object Object]
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-04-07T02:10:07.371Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - page.onError - stack:
+  apply (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-04-07T02:10:10.967Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - page.onError - msg: VIDEOJS: ERROR: (CODE:4 MEDIA_ERR_SRC_NOT_SUPPORTED) No compatible source was found for this media. [object Object]
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-04-07T02:10:10.967Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - page.onError - stack:
+  apply (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-04-07T02:10:17.636Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - page.onError - msg: VIDEOJS: ERROR: (CODE:4 MEDIA_ERR_SRC_NOT_SUPPORTED) No compatible source was found for this media. [object Object]
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-04-07T02:10:17.636Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - page.onError - stack:
+  apply (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-04-07T02:10:20.738Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - page.onError - msg: VIDEOJS: ERROR: (CODE:4 MEDIA_ERR_SRC_NOT_SUPPORTED) No compatible source was found for this media. [object Object]
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-04-07T02:10:20.738Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - page.onError - stack:
+  apply (:0)
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-04-07T02:10:27.752Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - page.onError - msg: VIDEOJS: ERROR: (CODE:4 MEDIA_ERR_SRC_NOT_SUPPORTED) No compatible source was found for this media. [object Object]
+
+  phantomjs://platform/console++.js:263 in error
+[ERROR - 2017-04-07T02:10:27.752Z] Session [2e88d4c0-1b37-11e7-b002-5f301f09689c] - page.onError - stack:
+  apply (:0)
+
+  phantomjs://platform/console++.js:263 in error
